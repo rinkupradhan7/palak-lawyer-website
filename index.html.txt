@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advocate Palak Sharma | Family & Criminal Lawyer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h2{
+    color:#c5a15f;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    background:#c5a15f;
+    color:white;
+    padding:12px 25px;
+    margin-top:20px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:20px;
+    color:#111;
+}
+
+.services{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#c5a15f;
+    margin-bottom:10px;
+}
+
+.experience{
+    background:#111;
+    color:white;
+    padding:50px 20px;
+}
+
+.contact{
+    background:#222;
+    color:white;
+    padding:50px 20px;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.emergency{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:red;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:80px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+    .services{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= EDIT CONTACT DETAILS HERE ================= -->
+
+<script>
+const phoneNumber = "+911234554321"; 
+const emailAddress = "Palaksharmalaw.in";
+const officeAddress = "Press Enclave Marg, Sector 6, Saket, New Delhi - 110017";
+const whatsappNumber = "911234554321";
+</script>
+
+<!-- ============================================================= -->
+
+<header>
+    <h2>Advocate Palak Sharma</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Family & Criminal Lawyer</h1>
+    <p>Strong Legal Representation | Trusted Advice | Immediate Support</p>
+    <a id="callBtn" class="btn">Call Now</a>
+</section>
+
+<section class="section" id="services">
+    <h2>Practice Areas</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Family Law</h3>
+            <p>Divorce, Child Custody, Maintenance, Domestic Violence matters.</p>
+        </div>
+
+        <div class="card">
+            <h3>Criminal Law</h3>
+            <p>Bail Applications, FIR Cases, Court Representation & Defense.</p>
+        </div>
+
+        <div class="card">
+            <h3>Legal Consultation</h3>
+            <p>Professional legal advice and strategic case planning.</p>
+        </div>
+    </div>
+</section>
+
+<section class="experience">
+    <h2>Experience</h2>
+    <p><strong>1+ Year of Professional Legal Practice</strong></p>
+    <p>Committed to protecting client rights with dedication and integrity.</p>
+</section>
+
+<section class="section">
+    <h2>About Advocate</h2>
+    <p>
+        Advocate Palak Sharma is a dedicated Family & Criminal Lawyer 
+        offering professional legal services with strong courtroom advocacy 
+        and client-focused solutions.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Information</h2>
+    <p><strong>Phone:</strong> <span id="phoneDisplay"></span></p>
+    <p><strong>Email:</strong> <span id="emailDisplay"></span></p>
+    <p><strong>Office:</strong> <span id="addressDisplay"></span></p>
+</section>
+
+<footer>
+    © 2026 Advocate Palak Sharma | All Rights Reserved
+</footer>
+
+<a id="emergencyBtn" class="emergency">Emergency Call</a>
+<a id="whatsappBtn" class="whatsapp">WhatsApp</a>
+
+<script>
+document.getElementById("callBtn").href = "tel:" + phoneNumber;
+document.getElementById("emergencyBtn").href = "tel:" + phoneNumber;
+document.getElementById("phoneDisplay").innerText = phoneNumber;
+document.getElementById("emailDisplay").innerText = emailAddress;
+document.getElementById("addressDisplay").innerText = officeAddress;
+document.getElementById("whatsappBtn").href = "https://wa.me/" + whatsappNumber;
+</script>
+
+</body>
+</html>
